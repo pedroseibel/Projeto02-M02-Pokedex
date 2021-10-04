@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <nav>
+        <article>
+            <h1><a href="/">Pokédex</a></h1>
+        </article>
+        
+        <ul>
+            <li><a href="/cadastro">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Cadastrar Pokémon</h1>
+    </header>
+
+    <section id="cadastrar">
+        <form action="/new" method="POST">
+            <div>
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name" placeholder="Nome" required>
+            </div>
+
+            <div>
+                <label for="species">Espécie: </label>
+                <input type="text" name="species" id="species" placeholder="Espécie" required>
+            </div>
+
+            <div>
+                <label for="number">Número: </label>
+                <input type="text" name="number" id="number" placeholder="Número na Pokédex" required>
+            </div>
+
+            <div>
+                <label for="portrait">Imagem: </label>
+                <input type="text" name="portrait" id="portrait" placeholder="URL da imagem" required>
+            </div>
+            
+            <div>
+                <label for="type">Tipo: </label>
+                <select name="type" id="type" required>
+                    <option value="Normal">Normal</option>
+                    <option value="Fighting">Fighting</option>
+                    <option value="Flying">Flying</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Ground">Ground</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Bug">Bug</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="Steel">Steel</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Water">Water</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Psychic">Psychic</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Fairy">Fairy</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="ability">Habilidade: </label>
+                <input type="text" name="ability" id="ability" placeholder="Habilidade" required>
+            </div>
+
+            <div>
+                <label for="description">Descrição: </label>
+                <input type="text" name="description" id="descrption" placeholder="Descrição" required>
+            </div>
+
+            <div>
+                <label for="height">Altura: </label>
+                <input type="text" name="height" id="height" placeholder="Altura" required>
+            </div>
+
+            <div>
+                <label for="weight">Peso: </label>
+                <input type="text" name="weight" id="weight" placeholder="Peso" required>
+            </div>
+    
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>

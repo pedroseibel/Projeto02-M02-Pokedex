@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Info</title>
+</head>
+
+<body>
+    <nav>
+        <article>
+            <h1><a href="/">Pokédex</a></h1>
+        </article>
+
+        <ul>
+            <li><a href="/cadastro">Cadastro</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>
+            <%= pokemon.name %> N° <%= pokemon.number %>
+        </h1>
+    </header>
+
+    <div class="block">
+    <div class="pokedex-screen">
+		<img class="pokedex-img" id="img" src="<%= pokemon.portrait %>" alt="">
+	</div>
+
+    <div class="details">
+        <div id="data1" class="pokedex-data">
+            <p class="pokedex-data-text"><span id="text_id"></span> <span id="text_name"></span></p>
+        </div>
+            <p class="pokedex-data-text description"><%= pokemon.description %></p><br>
+            <p class="pokedex-data-text height">Altura: <%= pokemon.height %></p><br>
+            <p class="pokedex-data-text weight">Peso: <%= pokemon.weight %></p><br>
+            <p class="pokedex-data-text species">Espécie: <%= pokemon.species %></p><br>
+            <p class="pokedex-data-text ability">Habilidade: <%= pokemon.ability %><span id="text_ability"></span></p> <br>
+            <div id="data2" class="pokedex-data">
+            <p class="pokedex-data-text"><span id="text_type"><%= pokemon.type %></span><span class="space"></span><span id="text_type2"></span></p>
+        </div>
+        </div>
+</div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
